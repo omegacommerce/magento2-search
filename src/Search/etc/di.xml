@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="OmegaCommerce\Api\Interfaces\ConfigInterface" type="OmegaCommerce\Search\Model\Config" />
+    <preference for="OmegaCommerce\Api\Interfaces\DBInterface" type="OmegaCommerce\Search\Model\DB" />
+
+    <type name="Magento\Framework\Console\CommandList">
+        <arguments>
+            <argument name="commands" xsi:type="array">
+                <item name="SearchCommand" xsi:type="object">OmegaCommerce\Search\Console\Command\SearchCommand</item>
+            </argument>
+        </arguments>
+    </type>
+</config>

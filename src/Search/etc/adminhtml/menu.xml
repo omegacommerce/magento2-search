@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="OmegaCommerce_Search::core_config" title="Omega Commerce" module="OmegaCommerce_Search"
+             sortOrder="100" parent="Magento_Backend::system"
+             action="adminhtml/system_config/edit/section/core_search" resource="OmegaCommerce_Search::core_config"/>
+        <add id="OmegaCommerce_Search::core_config_access" title="API Access Settings" module="OmegaCommerce_Search"
+             sortOrder="100" parent="OmegaCommerce_Search::core_config"
+             action="adminhtml/system_config/edit/section/omega_api" resource="OmegaCommerce_Search::core_config_access"/>
+        <add id="OmegaCommerce_Search::search" title="Search Settings" module="OmegaCommerce_Search"
+             sortOrder="50" parent="OmegaCommerce_Search::core_config" resource="OmegaCommerce_Search::search"
+             action="omega_search/index/application/"
+                />
+    </menu>
+</config>

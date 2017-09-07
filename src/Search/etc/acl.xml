@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Acl/etc/acl.xsd">
+    <acl>
+        <resources>
+            <resource id="Magento_Backend::admin">
+                <resource id="Magento_Backend::system">
+                    <resource id="OmegaCommerce_Search::core_config">
+                        <resource id="OmegaCommerce_Search::search" title="Search Settings" sortOrder="20"/>
+                        <resource id="OmegaCommerce_Search::core_config_access" title="Omega Commerce API Access Settings" sortOrder="1010"/>
+                    </resource>
+                </resource>
+            </resource>
+        </resources>
+    </acl>
+</config>

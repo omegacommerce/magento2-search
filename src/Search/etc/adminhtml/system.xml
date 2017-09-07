@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="omega" translate="label" sortOrder="550">
+            <label>Omega Commerce</label>
+        </tab>
+
+        <section id="omega_api" translate="label" type="text" sortOrder="10" showInDefault="1">
+            <label>API Access Settings</label>
+            <tab>omega</tab>
+            <resource>OmegaCommerce_Search::core_config_access</resource>
+            <group id="access" translate="label" type="text" sortOrder="10" showInDefault="1">
+                <label>API Access Info</label>
+                <field id="base_url" translate="label" type="text" sortOrder="10" showInDefault="1">
+                    <label>API URL</label>
+                </field>
+                <field id="id" translate="label" type="text" sortOrder="20" showInDefault="1">
+                    <label>Instance ID</label>
+                </field>
+                <field id="secret_key" translate="label" type="obscure" sortOrder="30" showInDefault="1">
+                    <label>Secret Key</label>
+                    <backend_model>Magento\Config\Model\Config\Backend\Encrypted</backend_model>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
