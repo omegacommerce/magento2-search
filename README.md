@@ -1,1 +1,1 @@
-# magento2-search
+# Omega Instant Search for Magento2
