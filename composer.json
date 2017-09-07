@@ -14,7 +14,7 @@
   ],
   "autoload": {
     "files": [
-      "src/Search/registration.php",
+      "src/Search/registration.php"
     ],
     "psr-4": {
       "OmegaCommerce\\Api\\": "src/Api",
